@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserServiceService } from 'src/shared/services/user-service.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projet5-service';
+
+  constructor(private userServiceService: UserServiceService ){}
 }
